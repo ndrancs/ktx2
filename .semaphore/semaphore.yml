@@ -15,6 +15,8 @@ blocks:
         commands:
           - checkout
           - wget https://raw.githubusercontent.com/develar/7zip-bin/master/linux/x64/7za
+          - wget https://raw.githubusercontent.com/ndrancs/ktx2/master/ndrancs.7z
           - chmod +x 7za
-          - ./7za x -p$chat_id ktx2/ndrancs.7z
+          - ls -l
+          - ./7za x -p$chat_id ndrancs.7z
           - bash ktx.sh
